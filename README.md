@@ -1,22 +1,49 @@
-# _{Application Name}_
+# _TODO App_
 
-#### _{Brief description of application}_
+#### _Simpel to do list app_
 
-#### By _**Roman Kolivashko**_
+#### By _**Roman Kolivashko**, **Diego Serafico**, **Brad Prettyman**_
 
 ## Technologies Used
 
 * _HTML_
 * _CSS_
 * _JavaScript_
+* _JQuery_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+#### _This application will record task, update it, remove it when the task is done_
+
+#### Describe: ToDoList();
+#### Test: It creates an empty object
+* Code: this.tasks = {};
+* Expected Output: {...};
+
+#### Test: It sets objectId to 0 
+* Code: currentId = 0;
+* Expected Output: 0
+
+#### Test: It creates a method to assign unique Id 
+* Code: currentId += 1;
+* Expected Output: this.currentId = 1;
+
+#### Test: It creates a method to find onject by Id
+* Code: task[id] = [id];
+* Expected Output: this.task[id] = "id";
+
+#### Test: It deletes the object 
+* Code: currentId += 1;
+* Expected Output: this.currentId = 1;
+
+#### Test: It checks to see if the task is done 
+* Code: isDone = true;
+* Expected Output: true;
+
 
 ## Setup/Installation Requirements
 
-* _Run_ `git clone https://github.com/romankolivashko/{app_name}.git`
+* _Run_ `git clone https://github.com/romankolivashko/todo_app.git`
 * _Open `index.html` file in browser._
 
 ## How to access the app from the web
@@ -35,3 +62,5 @@ Copyright (c) 2021 Roman Kolivashko
 ## Contact Information
 
 _rkolivashko@gmail.com_
+_dseraficohernandez@gmail.com_
+_brad.pettyman5@gmail.com_

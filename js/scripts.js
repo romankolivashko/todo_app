@@ -2,11 +2,13 @@
 function  ToDoList() {
   this.tasks = {};
   this.currentId = 0;  
+  this.isDone = Boolean;
 };
 
 ToDoList.prototype.addTask = function(task) {
   task.id = this.assignId();
   this.tasks[task.id] = task;
+  this.isDone = false;
 };
 
 ToDoList.prototype.assignId = function() {
@@ -29,6 +31,14 @@ ToDoList.prototype.deleteTask = function(id) {
   return true;
 };
 
+
+ToDoList.prototype.taskIsDone = function (id) {
+  if (this.tasks[id] != undefined) {
+    return this.isDone = true;  //delete the task?
+  }
+  return false;
+}
+
 // Business Logic for To Do app
 
 function Task(name, when, where) {
@@ -45,15 +55,10 @@ Task.prototype.fullTask = function () {
 let toDoList = new ToDoList();
 let task1 = new Task("sleep", "9pm", "home");
 let task2 = new Task("wakeup", "8am", "home");
+let isDone = false;
 
 toDoList.addTask(task1);
 toDoList.addTask(task2);
-
-// let addressBook = new AddressBook();
-// let contact = new Contact("Ada", "Lovelace", "503-555-0100");
-// let contact2 = new Contact("Grace", "Hopper", "503-555-0199");
-// addressBook.addContact(contact);
-// addressBook.addContact(contact2);
 
 console.log(toDoList.findTask(2));
 //console.log(toDoList.deleteTask(2));
