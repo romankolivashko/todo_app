@@ -61,6 +61,6 @@ Copyright (c) 2021 Roman Kolivashko
 
 ## Contact Information
 
-_rkolivashko@gmail.com_
-_dseraficohernandez@gmail.com_
-_brad.pettyman5@gmail.com_
+* _rkolivashko@gmail.com_
+* _dseraficohernandez@gmail.com_
+* _brad.pettyman5@gmail.com_
